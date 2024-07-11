@@ -22,10 +22,10 @@ jobs:
       with:
         registry: registry.cn-hangzhou.aliyuncs.com
         username: fuiho
-        password: 123qweASD
+        password: Aliyun@123
         logout: false
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/apitable/node:v16.15.0 docker://registry.cn-hangzhou.aliyuncs.com/fuiho/node:v16.15.0
+         skopeo copy docker://docker.io/wordpress:beta-php8.3-fpm-alpine docker://registry.cn-hangzhou.aliyuncs.com/fuiho/wordpress:beta-php8.3-fpm-alpine
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
