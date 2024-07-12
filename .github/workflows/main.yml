@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/wordpress:beta-php8.3-fpm-alpine docker://registry.cn-hangzhou.aliyuncs.com/fuiho/wordpress:beta-php8.3-fpm-alpine
+         skopeo copy docker://docker.io/apitable/web-server:latest docker://registry.cn-hangzhou.aliyuncs.com/fuiho/apitable/web-server:latest
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
